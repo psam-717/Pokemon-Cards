@@ -32,6 +32,16 @@ export default function App() {
     weaknesses: ['None']
   }
 
+  const vegetablePokemonData = {
+    name: 'Bulbasur',
+    hp: 52,
+    image: require('./assets/vegetablePokemon.jpg'),
+    type: 'knife',
+    moves: ['strength', 'durability'],
+    weaknesses: ['fire', 'lava']
+  }
+  
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
@@ -40,6 +50,8 @@ export default function App() {
         <PokemonCard {...yellowPokemonData}/>
 
         <PokemonCard {...fireTailPokemonData}/>
+
+        <PokemonCard {...vegetablePokemonData}/>
 
 
       </ScrollView>
